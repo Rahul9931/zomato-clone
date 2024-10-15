@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Food_Details_Activity">
+
+    <ImageButton
+        android:id="@+id/btn_back_details"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="@dimen/dim_20"
+        android:layout_marginTop="@dimen/dim_30"
+        android:background="@android:color/transparent"
+        android:contentDescription="godown"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_foodname_details"
+        android:transitionName="foodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_10"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Food Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_dim_50"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back_details" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="@dimen/dim_450"
+        android:layout_height="@dimen/dim_400"
+        android:layout_marginTop="@dimen/dim_10"
+        app:cardBackgroundColor="@color/darkred"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_foodname_details">
+
+        <ImageView
+            android:id="@+id/foodimage_details"
+            android:transitionName="foodimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu6" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_30"
+        android:layout_marginTop="@dimen/dim_20"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Short description"
+        android:textSize="@dimen/dim_35"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+    <TextView
+        android:id="@+id/description_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_15"
+        android:layout_marginEnd="@dimen/dim_15"
+        android:text="Lorem ipsum dolor sit amet,  consectetur adipiscing elit,  sed do eiusmod tempor incididunt  ut labore et dolore magna aliqua. Ut enim ad "
+        android:textSize="@dimen/text_dim_30"
+        android:padding="@dimen/dim_10"
+        android:fontFamily="@font/lato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_30"
+        android:layout_marginTop="@dimen/dim_20"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Ingredients"
+        android:textSize="@dimen/dim_35"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/description_details"
+        app:layout_constraintTop_toBottomOf="@+id/description_details" />
+
+    <TextView
+        android:id="@+id/ingredient_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_15"
+        android:layout_marginEnd="@dimen/dim_15"
+        android:text="Strowberry\nCream\nwheat"
+        android:textSize="@dimen/text_dim_30"
+        android:padding="@dimen/dim_10"
+        android:fontFamily="@font/lato"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_addcart_details"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_100"
+        android:layout_marginStart="@dimen/dim_20"
+        android:layout_marginEnd="@dimen/dim_20"
+        android:layout_marginTop="@dimen/text_dim_30"
+        android:background="@drawable/gobtn_shape"
+        android:elevation="@dimen/dim_20"
+        android:fontFamily="@font/bentonsan_bold"
+        android:text="Add To Cart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_dim_35"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredient_details" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">zomato</string>
+    <string name="Deliever_Favorite_Food">Deliever Favorite Food</string>
+    <string name="Login">Login To Your  Account</string>
+    <string name="Dont_have_acc">Don’t Have an Account?</string>
+    <string name="start_string">Enjoy Restaurant Quality \n Meals At Home</string>
+    <string name="Signup">Sign Up Here</string>
+    <string name="Already_have_an_acc">Already Have An Account?</string>
+    <string name="SearchHint">What do you want to order?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">893885030650-i0nhegrchtf1ku6dh0tqos1i75idd14g.apps.googleusercontent.com</string>
+</resources>

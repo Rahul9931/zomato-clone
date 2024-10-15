@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    tools:context=".Fragment.Congrates_Bottomsheet_Fragment">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_dim_20"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Congrats \nYour Order Placed"
+        android:textAlignment="center"
+        android:textColor="@color/darkred"
+        android:textSize="@dimen/text_dim_40"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/dim_300"
+        android:layout_height="@dimen/dim_300"
+        android:layout_marginTop="@dimen/text_dim_30"
+        android:src="@drawable/congratulation" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_go"
+        android:layout_width="@dimen/dim_250"
+        android:layout_height="@dimen/dim_80"
+        android:layout_marginTop="@dimen/text_dim_30"
+        android:layout_marginBottom="@dimen/dim_100"
+        android:background="@drawable/gobtn_shape"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Go Home"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_dim_30"
+        android:textStyle="bold" />
+
+</LinearLayout>

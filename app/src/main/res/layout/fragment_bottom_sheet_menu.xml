@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Fragment.BottomSheetMenuFragment">
+
+
+    <ImageButton
+        android:id="@+id/btndismiss"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="@dimen/dim_20"
+        android:layout_marginTop="@dimen/dim_20"
+        android:background="@android:color/transparent"
+        android:contentDescription="godown"
+        android:src="@drawable/arrow_down" />
+
+    <TextView
+        android:id="@+id/txt_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_10"
+        android:layout_marginStart="@dimen/dim_20"
+        android:layout_marginEnd="@dimen/dim_20"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Menu"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_dim_60"
+        android:textStyle="bold"
+        android:textAlignment="center"
+         />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dim_20"
+        android:layout_marginEnd="@dimen/dim_20"
+        android:layout_marginTop="@dimen/dim_10"
+        android:layout_marginBottom="@dimen/dim_30"
+        />
+
+</LinearLayout>
